@@ -1,0 +1,203 @@
+================================================================================
+SURVEY DATA ANALYSIS REPORT
+================================================================================
+Generated on: August 01, 2025 at 01:56 AM
+Report ID: SUR-20250801-015650
+
+This report provides a comprehensive analysis of survey responses including
+demographic breakdowns, sentiment analysis, pattern detection, and
+statistical insights to support data-driven decision making.
+
+================================================================================
+
+EXECUTIVE SUMMARY
+--------------------------------------------------
+
+📊 Total Survey Responses: 20
+📈 Response Rate: 85.5%
+
+Key Highlights:
+• Comprehensive analysis of survey data across multiple dimensions
+• Demographic breakdowns reveal respondent characteristics
+• Sentiment analysis provides insights into respondent attitudes
+• Pattern detection identifies correlations and trends
+• Statistical analysis supports evidence-based conclusions
+
+SURVEY OVERVIEW
+--------------------------------------------------
+
+📋 Survey Details:
+   • Total Responses: 20
+   • Data Quality: Excellent
+
+📊 Data Completeness by Column:
+   • age: 100.0%
+   • gender: 100.0%
+   • region: 100.0%
+   • education: 100.0%
+   • satisfaction: 100.0%
+   • feedback: 100.0%
+   • recommend: 100.0%
+
+DEMOGRAPHIC ANALYSIS
+--------------------------------------------------
+
+👥 Respondent Demographics:
+
+📊 Age:
+   • 25: 1 (5.0%)
+   • 32: 1 (5.0%)
+   • 45: 1 (5.0%)
+   • 28: 1 (5.0%)
+   • 35: 1 (5.0%)
+   • 42: 1 (5.0%)
+   • 29: 1 (5.0%)
+   • 38: 1 (5.0%)
+   • 31: 1 (5.0%)
+   • 27: 1 (5.0%)
+   • 50: 1 (5.0%)
+   • 33: 1 (5.0%)
+   • 26: 1 (5.0%)
+   • 39: 1 (5.0%)
+   • 44: 1 (5.0%)
+   • 36: 1 (5.0%)
+   • 23: 1 (5.0%)
+   • 41: 1 (5.0%)
+   • 30: 1 (5.0%)
+   • 47: 1 (5.0%)
+
+📊 Gender:
+   • Female: 10 (50.0%)
+   • Male: 10 (50.0%)
+
+📊 Region:
+   • North: 5 (25.0%)
+   • South: 5 (25.0%)
+   • East: 5 (25.0%)
+   • West: 5 (25.0%)
+
+📊 Education:
+   • Bachelor: 8 (40.0%)
+   • Master: 5 (25.0%)
+   • High School: 4 (20.0%)
+   • Phd: 3 (15.0%)
+
+SENTIMENT ANALYSIS
+--------------------------------------------------
+
+💭 Text Response Sentiment Analysis:
+
+📝 feedback:
+   • Total Responses: 20
+   • Positive: 9 (45.0%)
+   • Negative: 3 (15.0%)
+   • Neutral: 8 (40.0%)
+   • Average Sentiment Score: 0.99
+
+PATTERN ANALYSIS
+--------------------------------------------------
+
+🔍 Detected Patterns and Correlations:
+
+📋 Education Pattern Patterns:
+   • Education levels Bachelor, Master, High School, Phd most commonly responded 'Yes' to recommend
+     Confidence: 80.0%
+     Sample Size: 20
+
+   • Education levels Bachelor, Phd most commonly responded 'Very Satisfied' to satisfaction
+     Confidence: 40.0%
+     Sample Size: 11
+
+📋 Gender Pattern Patterns:
+   • Gender differences detected in satisfaction responses
+     Confidence: 75.0%
+     Sample Size: 20
+
+   • Gender differences detected in feedback responses
+     Confidence: 75.0%
+     Sample Size: 20
+
+   • Gender differences detected in recommend responses
+     Confidence: 75.0%
+     Sample Size: 20
+
+📋 Outlier Pattern Patterns:
+   • Outlier responses detected in feedback
+     Confidence: 70.0%
+     Sample Size: 20
+
+   • Outlier responses detected in recommend
+     Confidence: 70.0%
+     Sample Size: 20
+
+📋 Regional Pattern Patterns:
+   • Regions North, South most commonly responded 'Yes' to recommend
+     Confidence: 50.0%
+     Sample Size: 10
+
+📋 Age Pattern Patterns:
+   • Age groups 18-25, 26-35 most commonly responded 'Very Satisfied' to satisfaction
+     Confidence: 40.0%
+     Sample Size: 11
+
+   • Age groups 18-25, 26-35 most commonly responded 'Yes' to recommend
+     Confidence: 40.0%
+     Sample Size: 11
+
+STATISTICAL ANALYSIS
+--------------------------------------------------
+
+📊 Response Distribution Analysis:
+
+❓ satisfaction:
+   • Total Responses: 20
+   • Response Rate: 100.0%
+   • Top Responses:
+     - Very Satisfied: 5 (25.0%)
+     - Satisfied: 5 (25.0%)
+     - Neutral: 5 (25.0%)
+
+❓ feedback:
+   • Total Responses: 20
+   • Response Rate: 100.0%
+   • Top Responses:
+     - Great experience with the product!: 1 (5.0%)
+     - Good but could be better.: 1 (5.0%)
+     - It was okay: 1 (5.0%)
+
+❓ recommend:
+   • Total Responses: 20
+   • Response Rate: 100.0%
+   • Top Responses:
+     - Yes: 9 (45.0%)
+     - No: 5 (25.0%)
+     - nothing special.: 2 (10.0%)
+
+KEY FINDINGS
+--------------------------------------------------
+
+• Age: 25 is the most common category (1 responses)
+• Gender: Female is the most common category (10 responses)
+• Region: North is the most common category (5 responses)
+• Education: Bachelor is the most common category (8 responses)
+• feedback: Positive sentiment dominates the responses
+• 1 high-confidence patterns detected in the data
+
+RECOMMENDATIONS
+--------------------------------------------------
+
+• Investigate 1 high-confidence patterns for actionable insights
+• Consider conducting follow-up surveys to validate findings
+• Implement targeted improvements based on demographic insights
+• Monitor sentiment trends over time for continuous improvement
+• Use statistical insights to inform decision-making processes
+
+================================================================================
+REPORT END
+================================================================================
+
+This report was generated automatically by the Survey Data Analyzer.
+For questions or additional analysis, please contact the development team.
+
+Report generated on: August 01, 2025 at 01:56 AM
+================================================================================
