@@ -1,0 +1,21 @@
+age,gender,region,education,satisfaction,feedback,recommend
+25,Female,North,Bachelor,Very Satisfied,Great experience with the product!,Yes
+32,Male,South,Master,Satisfied,Good but could be better.,Yes
+45,Female,East,High School,Neutral,It was okay, nothing special.,Maybe
+28,Male,West,Bachelor,Dissatisfied,Poor quality and bad service.,No
+35,Female,North,PhD,Very Satisfied,Excellent product and amazing support!,Yes
+42,Male,South,Bachelor,Satisfied,Overall good experience.,Yes
+29,Female,East,Master,Neutral,Average service, nothing exceptional.,Maybe
+38,Male,West,High School,Dissatisfied,Very disappointed with the service.,No
+31,Female,North,Bachelor,Very Satisfied,Love the product! Highly recommend.,Yes
+27,Male,South,Master,Satisfied,Good value for money.,Yes
+50,Female,East,PhD,Neutral,It meets basic expectations.,Maybe
+33,Male,West,Bachelor,Dissatisfied,Not worth the money at all.,No
+26,Female,North,High School,Very Satisfied,Amazing experience!,Yes
+39,Male,South,Bachelor,Satisfied,Decent product, would buy again.,Yes
+44,Female,East,Master,Neutral,It's okay, nothing special.,Maybe
+36,Male,West,PhD,Dissatisfied,Terrible customer service.,No
+23,Female,North,Bachelor,Very Satisfied,Best purchase ever!,Yes
+41,Male,South,High School,Satisfied,Good quality product.,Yes
+30,Female,East,Bachelor,Neutral,Average experience.,Maybe
+47,Male,West,Master,Dissatisfied,Complete waste of money.,No 

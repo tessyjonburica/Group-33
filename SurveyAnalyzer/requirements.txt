@@ -1,0 +1,16 @@
+# Survey Data Analyzer - Requirements
+# This project uses only Python standard library modules
+# No external dependencies required
+
+# Python 3.8+ required
+# Standard library modules used:
+# - csv
+# - re
+# - math
+# - statistics
+# - os
+# - sys
+# - datetime
+# - itertools
+# - collections
+# - typing 
