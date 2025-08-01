@@ -112,6 +112,21 @@ class StatsAnalyzer:
         # Calculate expected frequencies
         expected = self._calculate_expected_frequencies(observed)
         
+        # Check if expected frequencies are sufficient (chi-square assumption)
+        # Standard rule: expected frequency should be at least 5 in each cell
+        total_observations = sum(sum(row) for row in observed)
+        min_expected = min(min(row) for row in expected) if expected else 0
+        
+        # If we have very few observations or expected frequencies are too low
+        if total_observations < 10 or min_expected < 1:
+            return {
+                'chi_square': 0.0,
+                'p_value': 1.0,
+                'df': 0,
+                'significant': False,
+                'error': 'Insufficient data for chi-square test'
+            }
+        
         # Calculate chi-square statistic
         chi_square = 0.0
         for i in range(len(observed)):

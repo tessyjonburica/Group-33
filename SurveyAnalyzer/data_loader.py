@@ -138,7 +138,9 @@ class DataLoader:
                 
                 for key, value in row.items():
                     # Clean the key (remove whitespace, normalize)
-                    clean_key = key.strip().lower().replace(' ', '_')
+                    if key is None:
+                        continue  # Skip None keys
+                    clean_key = str(key).strip().lower().replace(' ', '_')
                     
                     # Clean the value
                     if value is None or value == '':
@@ -161,7 +163,7 @@ class DataLoader:
             valid_rows = len(cleaned_data)
             invalid_rows = total_rows - valid_rows
             
-                        print(f"INFO: Data validation results:")
+            print(f"INFO: Data validation results:")
             print(f"   Total rows: {total_rows}")
             print(f"   Valid rows: {valid_rows}")
             print(f"   Invalid rows: {invalid_rows}")
