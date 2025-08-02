@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
 Survey Summary Module
-Author: Student Developer
 Description: Generates summary statistics, response counts, percentages,
 and demographic breakdowns for survey data analysis.
 """

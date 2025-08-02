@@ -439,7 +439,7 @@ def print_bullet_list(items: List[str], indent: int = 2):
     """
     indent_str = " " * indent
     for item in items:
-        print(f"{indent_str}• {item}")
+        print(f"{indent_str}- {item}")
 
 
 def print_key_value_pairs(data: Dict[str, Any], indent: int = 2):

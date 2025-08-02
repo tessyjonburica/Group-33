@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
 Pattern Detector Module
-Author: Student Developer
 Description: Identifies correlations, patterns, and trends in survey responses
 using statistical analysis and pattern recognition techniques.
 """

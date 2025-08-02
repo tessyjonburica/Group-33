@@ -114,15 +114,15 @@ class ReportGenerator:
             response_rate = summary.get('response_rate', 0)
             
             lines.extend([
-                f"📊 Total Survey Responses: {total_responses:,}",
-                f"📈 Response Rate: {response_rate:.1f}%",
+                            f"Total Survey Responses: {total_responses:,}",
+            f"Response Rate: {response_rate:.1f}%",
                 "",
                 "Key Highlights:",
-                "• Comprehensive analysis of survey data across multiple dimensions",
-                "• Demographic breakdowns reveal respondent characteristics",
-                "• Sentiment analysis provides insights into respondent attitudes",
-                "• Pattern detection identifies correlations and trends",
-                "• Statistical analysis supports evidence-based conclusions",
+                            "- Comprehensive analysis of survey data across multiple dimensions",
+            "- Demographic breakdowns reveal respondent characteristics",
+            "- Sentiment analysis provides insights into respondent attitudes",
+            "- Pattern detection identifies correlations and trends",
+            "- Statistical analysis supports evidence-based conclusions",
                 ""
             ])
         
@@ -141,9 +141,9 @@ class ReportGenerator:
             data_quality = summary.get('data_quality', {})
             
             lines.extend([
-                f"📋 Survey Details:",
-                f"   • Total Responses: {total_responses:,}",
-                f"   • Data Quality: {self._assess_data_quality(data_quality)}",
+                f"Survey Details:",
+                f"   - Total Responses: {total_responses:,}",
+                f"   - Data Quality: {self._assess_data_quality(data_quality)}",
                 ""
             ])
             
@@ -151,9 +151,9 @@ class ReportGenerator:
             if data_quality:
                 completeness = data_quality.get('completeness', {})
                 if completeness:
-                    lines.append("📊 Data Completeness by Column:")
+                    lines.append("Data Completeness by Column:")
                     for column, completeness_pct in completeness.items():
-                        lines.append(f"   • {column}: {completeness_pct:.1f}%")
+                        lines.append(f"   - {column}: {completeness_pct:.1f}%")
                     lines.append("")
         
         return lines
@@ -174,12 +174,12 @@ class ReportGenerator:
             
             for demo_field, breakdown in demographics.items():
                 if breakdown:
-                    lines.append(f"📊 {demo_field.title()}:")
+                    lines.append(f"{demo_field.title()}:")
                     total_demo = sum(breakdown.values())
                     
                     for category, count in breakdown.items():
                         percentage = (count / total_demo) * 100
-                        lines.append(f"   • {category}: {count} ({percentage:.1f}%)")
+                        lines.append(f"   - {category}: {count} ({percentage:.1f}%)")
                     
                     lines.append("")
         else:
@@ -202,12 +202,12 @@ class ReportGenerator:
             
             for column, results in sentiment.items():
                 if isinstance(results, dict) and 'total_responses' in results:
-                    lines.append(f"📝 {column}:")
-                    lines.append(f"   • Total Responses: {results['total_responses']}")
-                    lines.append(f"   • Positive: {results['positive']} ({results['positive_pct']:.1f}%)")
-                    lines.append(f"   • Negative: {results['negative']} ({results['negative_pct']:.1f}%)")
-                    lines.append(f"   • Neutral: {results['neutral']} ({results['neutral_pct']:.1f}%)")
-                    lines.append(f"   • Average Sentiment Score: {results['avg_score']:.2f}")
+                    lines.append(f"{column}:")
+                    lines.append(f"   - Total Responses: {results['total_responses']}")
+                    lines.append(f"   - Positive: {results['positive']} ({results['positive_pct']:.1f}%)")
+                    lines.append(f"   - Negative: {results['negative']} ({results['negative_pct']:.1f}%)")
+                    lines.append(f"   - Neutral: {results['neutral']} ({results['neutral_pct']:.1f}%)")
+                    lines.append(f"   - Average Sentiment Score: {results['avg_score']:.2f}")
                     lines.append("")
         else:
             lines.append("No text responses available for sentiment analysis.")
@@ -224,7 +224,7 @@ class ReportGenerator:
         ]
         
         if patterns:
-            lines.append("🔍 Detected Patterns and Correlations:")
+            lines.append("Detected Patterns and Correlations:")
             lines.append("")
             
             # Group patterns by type
@@ -236,9 +236,9 @@ class ReportGenerator:
                 pattern_types[pattern_type].append(pattern)
             
             for pattern_type, type_patterns in pattern_types.items():
-                lines.append(f"📋 {pattern_type.replace('_', ' ').title()} Patterns:")
+                lines.append(f"{pattern_type.replace('_', ' ').title()} Patterns:")
                 for pattern in type_patterns:
-                    lines.append(f"   • {pattern['description']}")
+                    lines.append(f"   - {pattern['description']}")
                     lines.append(f"     Confidence: {pattern['confidence']:.1f}%")
                     lines.append(f"     Sample Size: {pattern['sample_size']}")
                     lines.append("")
@@ -259,18 +259,18 @@ class ReportGenerator:
         question_summaries = summary.get('question_summaries', {})
         
         if question_summaries:
-            lines.append("📊 Response Distribution Analysis:")
+            lines.append("Response Distribution Analysis:")
             lines.append("")
             
             for question, q_summary in question_summaries.items():
                 if isinstance(q_summary, dict):
-                    lines.append(f"❓ {question}:")
-                    lines.append(f"   • Total Responses: {q_summary.get('total_responses', 0)}")
-                    lines.append(f"   • Response Rate: {q_summary.get('response_rate', 0):.1f}%")
+                    lines.append(f"{question}:")
+                    lines.append(f"   - Total Responses: {q_summary.get('total_responses', 0)}")
+                    lines.append(f"   - Response Rate: {q_summary.get('response_rate', 0):.1f}%")
                     
                     top_responses = q_summary.get('top_responses', [])
                     if top_responses:
-                        lines.append("   • Top Responses:")
+                        lines.append("   - Top Responses:")
                         for response, count in top_responses[:3]:
                             percentage = (count / q_summary['total_responses']) * 100
                             lines.append(f"     - {response}: {count} ({percentage:.1f}%)")
@@ -298,20 +298,20 @@ class ReportGenerator:
             for demo_field, breakdown in demographics.items():
                 if breakdown:
                     most_common = max(breakdown.items(), key=lambda x: x[1])
-                    findings.append(f"• {demo_field.title()}: {most_common[0]} is the most common category ({most_common[1]} responses)")
+                    findings.append(f"- {demo_field.title()}: {most_common[0]} is the most common category ({most_common[1]} responses)")
         
         # Sentiment findings
         if sentiment:
             for column, results in sentiment.items():
                 if isinstance(results, dict):
                     dominant_sentiment = self._get_dominant_sentiment(results)
-                    findings.append(f"• {column}: {dominant_sentiment} sentiment dominates the responses")
+                    findings.append(f"- {column}: {dominant_sentiment} sentiment dominates the responses")
         
         # Pattern findings
         if patterns:
             high_confidence_patterns = [p for p in patterns if p.get('confidence', 0) >= 80]
             if high_confidence_patterns:
-                findings.append(f"• {len(high_confidence_patterns)} high-confidence patterns detected in the data")
+                findings.append(f"- {len(high_confidence_patterns)} high-confidence patterns detected in the data")
         
         if findings:
             lines.extend(findings)
@@ -337,7 +337,7 @@ class ReportGenerator:
             completeness = data_quality.get('completeness', {})
             low_completeness = [col for col, comp in completeness.items() if comp < 80]
             if low_completeness:
-                recommendations.append(f"• Improve data collection for columns with low completeness: {', '.join(low_completeness)}")
+                recommendations.append(f"- Improve data collection for columns with low completeness: {', '.join(low_completeness)}")
         
         # Sentiment-based recommendations
         if sentiment:
@@ -347,20 +347,20 @@ class ReportGenerator:
                     negative_sentiment_columns.append(column)
             
             if negative_sentiment_columns:
-                recommendations.append(f"• Address concerns in columns with high negative sentiment: {', '.join(negative_sentiment_columns)}")
+                recommendations.append(f"- Address concerns in columns with high negative sentiment: {', '.join(negative_sentiment_columns)}")
         
         # Pattern-based recommendations
         if patterns:
             high_confidence_patterns = [p for p in patterns if p.get('confidence', 0) >= 80]
             if high_confidence_patterns:
-                recommendations.append(f"• Investigate {len(high_confidence_patterns)} high-confidence patterns for actionable insights")
+                recommendations.append(f"- Investigate {len(high_confidence_patterns)} high-confidence patterns for actionable insights")
         
         # General recommendations
         recommendations.extend([
-            "• Consider conducting follow-up surveys to validate findings",
-            "• Implement targeted improvements based on demographic insights",
-            "• Monitor sentiment trends over time for continuous improvement",
-            "• Use statistical insights to inform decision-making processes"
+            "- Consider conducting follow-up surveys to validate findings",
+            "- Implement targeted improvements based on demographic insights",
+            "- Monitor sentiment trends over time for continuous improvement",
+            "- Use statistical insights to inform decision-making processes"
         ])
         
         lines.extend(recommendations)
@@ -446,10 +446,10 @@ class ReportGenerator:
                 f"Response Rate: {summary_data.get('response_rate', 0):.1f}%",
                 "",
                 "Key Metrics:",
-                "• Data quality assessment",
-                "• Demographic breakdowns",
-                "• Response distributions",
-                "• Pattern detection results",
+                            "- Data quality assessment",
+            "- Demographic breakdowns",
+            "- Response distributions",
+            "- Pattern detection results",
                 "",
                 "=" * 50
             ]

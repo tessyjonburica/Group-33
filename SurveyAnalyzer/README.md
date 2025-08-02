@@ -116,8 +116,8 @@ View comprehensive statistics including:
 Analyze text responses using:
 - **Positive Keywords**: excellent, amazing, great, good, etc.
 - **Negative Keywords**: terrible, awful, bad, poor, etc.
-- **Negation Handling**: "not good" → negative sentiment
-- **Intensifier Recognition**: "very good" → amplified positive
+            - **Negation Handling**: "not good" - negative sentiment
+            - **Intensifier Recognition**: "very good" - amplified positive
 
 ### 4. Statistical Analysis
 

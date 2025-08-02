@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
 Survey Data Analyzer - Main CLI Application
-Author: Student Developer
 Description: Main entry point for the Survey Data Analyzer CLI tool.
 Provides a menu-driven interface for analyzing survey data from CSV files.
 """
