@@ -6,6 +6,9 @@ Description: Comprehensive unit tests for statistical analysis functionality.
 """
 
 import unittest
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from stats_analyzer import StatsAnalyzer
 
 

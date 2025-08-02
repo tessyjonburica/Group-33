@@ -109,6 +109,17 @@ class StatsAnalyzer:
                 row.append(int(crosstab[i][j]))
             observed.append(row)
         
+        # Check if we have enough data for chi-square test
+        total_observations = sum(sum(row) for row in observed)
+        if total_observations < 5:  # Chi-square test requires at least 5 observations
+            return {
+                'chi_square': 0.0,
+                'p_value': 1.0,
+                'df': 0,
+                'significant': False,
+                'error': 'Insufficient data for chi-square test'
+            }
+        
         # Calculate expected frequencies
         expected = self._calculate_expected_frequencies(observed)
         
